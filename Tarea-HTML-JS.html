@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Sencilla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 1em 0;
+        }
+        main {
+            padding: 2em;
+        }
+        button {
+            padding: 0.5em 1em;
+            border: none;
+            background-color: #6200ea;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página</h1>
+    </header>
+    <main>
+        <p>Haz clic en el botón para ver un mensaje:</p>
+        <button onclick="showMessage()">Haz clic aquí</button>
+        <p id="message" style="margin-top: 1em; font-size: 1.2em; color: #6200ea;"></p>
+    </main>
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerText = "¡Hola, este es un mensaje desde JavaScript!";
+        }
+    </script>
+</body>
+</html>
